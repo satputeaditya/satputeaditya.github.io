@@ -32,37 +32,74 @@
 
     a {
       margin-right: 20px;
+      color: #0066cc;
+      cursor: pointer;
+    }
+
+    #work-in-progress {
+      display: none;
+      margin-top: 50px;
+      padding: 30px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    #work-in-progress h2 {
+      margin-top: 0;
     }
   </style>
 </head>
 
 <body>
 
-  <h1>Aditya Satpute</h1>
+  <div id="main-content">
 
-  <p>
-    Research interests: System-Technology Co-Optimization (STCO),
-    heterogeneous integration, architecture and workload benchmarking,
-    and EDA methodologies enabling cross-layer co-design.
-  </p>
+    <h1>Aditya Satpute</h1>
 
-  <p>
-    <a href="cv.pdf">CV</a>
-    <a href="https://github.com/satputeaditya">GitHub</a>
-  </p>
+    <p>
+      Research interests: System-Technology Co-Optimization (STCO),
+      heterogeneous integration, architecture and workload benchmarking,
+      and EDA methodologies enabling cross-layer co-design.
+    </p>
 
-  <h2>Research</h2>
+    <p>
+      <a onclick="showWorkInProgress()">CV</a>
+      <a onclick="showWorkInProgress()">GitHub</a>
+    </p>
 
-  <p>
-    Independent research and literature survey in heterogeneous integration
-    and STCO.
-  </p>
+    <h2>Research</h2>
 
-  <h2>Literature Survey</h2>
+    <p>
+      Independent research and literature survey in heterogeneous integration
+      and STCO.
+    </p>
 
-  <p>
-    Searchable literature compendium — in progress.
-  </p>
+    <h2>Literature Survey</h2>
+
+    <p>
+      Searchable literature compendium — in progress.
+    </p>
+
+  </div>
+
+  <div id="work-in-progress">
+    <h2>Work in Progress</h2>
+    <p>Be back soon!</p>
+    <a onclick="goBack()">← Back</a>
+  </div>
+
+  <script>
+    function showWorkInProgress() {
+      document.getElementById("main-content").style.display = "none";
+      document.getElementById("work-in-progress").style.display = "block";
+    }
+
+    function goBack() {
+      document.getElementById("work-in-progress").style.display = "none";
+      document.getElementById("main-content").style.display = "block";
+    }
+  </script>
 
 </body>
 
