@@ -34,19 +34,18 @@
       margin-right: 20px;
       color: #0066cc;
       cursor: pointer;
+      text-decoration: underline;
     }
 
     #work-in-progress {
       display: none;
-      margin-top: 50px;
-      padding: 30px;
+      margin-top: 80px;
       text-align: center;
-      border: 1px solid #ddd;
-      border-radius: 8px;
     }
 
     #work-in-progress h2 {
-      margin-top: 0;
+      font-size: 30px;
+      margin-bottom: 5px;
     }
   </style>
 </head>
@@ -66,6 +65,8 @@
     <p>
       <a onclick="showWorkInProgress()">CV</a>
       <a onclick="showWorkInProgress()">GitHub</a>
+      <a onclick="showWorkInProgress()">Research</a>
+      <a onclick="showWorkInProgress()">Literature Survey</a>
     </p>
 
     <h2>Research</h2>
@@ -84,9 +85,13 @@
   </div>
 
   <div id="work-in-progress">
+
     <h2>Work in Progress</h2>
+
     <p>Be back soon!</p>
+
     <a onclick="goBack()">← Back</a>
+
   </div>
 
   <script>
